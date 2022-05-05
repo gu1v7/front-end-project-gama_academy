@@ -1,4 +1,3 @@
 # projeto-css-hc3
-Beginner dev projects
+Personal webpage project developed during the Hiring Coders #3 bootcamp.
 
-This is a repository where I will post some beginner development projects that I have been working on.
