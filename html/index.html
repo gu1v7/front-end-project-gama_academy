@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/eada411a29.js" crossorigin="anonymous"></script>
+    <title>Guilherme Vasconcelos</title>
+    <style>
+        img {
+            min-width: 10%;
+            min-height: 10%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="../images/logoGV.png" alt="Logo GV" width = "190" height = "140">
+        </div>
+        <ul>
+            <li>
+                <a target="_blank" href="https://github.com/gu1v7"> Github</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://www.linkedin.com/in/guilherme-vasconcelos7/"> LinkedIn </a>
+            </li>
+            <li>
+                <a target="_blank" href="http://lattes.cnpq.br/4984933333637098"> Lattes </a>
+            </li>
+            <li>
+                <a target="_blank" href="mailto:teste@teste.com"> E-mail </a>
+            </li>
+            <li>
+                <a target="_blank" href="https://wa.me/11999999999"> WhatsApp </a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1> Guilherme Vasconcelos </h1>
+                <br>
+                <h3> Mathematical physicist, researcher and tech enthusiast.</h3>
+                <br>
+                <hr>
+                <br>
+            </div>
+            <div id="click">
+                Click here to know more about me!
+            </div>
+
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fa-solid fa-circle-chevron-down"></i>
+            </div>
+
+            <div style="display: none;" id="about">
+                <p>
+                    I am currently a MSc Mathematics student at IME-USP. I got my BSc degree in Physics from UFJF and,
+                    during my undergraduation, received a grant from the same institution to study one semester abroad 
+                    at Radboud University, in the Netherlands. 
+                </p>
+                <p>
+                    My current research interests are applied mathematics, mathematical physics, data science
+                    and disruptive technologies.
+                </p>
+            </div>
+     <br>
+    <!-- <hr>
+    <br> -->
+            <div class="form">
+                <form action="">
+                    <input type="text" placeholder="Receba a newsletter!">
+                    <button>Enviar!</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('show_about');
+        }
+    </script>
+</body>
+</html>

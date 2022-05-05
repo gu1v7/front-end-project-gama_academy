@@ -1,0 +1,209 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+    color:darkcyan;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Tags */
+
+header {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 10px;
+    /* border-bottom: 2px solid white; */
+    box-shadow: 1px 1px 10px 1px #FFF;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li {
+    padding: 5px;
+}
+
+header ul li a {
+    transition: 200ms;
+}
+
+header ul li a:hover {
+    color: #FFF;
+    text-decoration: solid underline;
+    cursor:pointer;
+}
+
+body { 
+    /* background-image: url(./pexels-daria-10260573.jpg);
+    background-repeat:no-repeat;
+    background-position: center center fixed; */
+    /* background: url(./pexels-daria-10260573.jpg) no-repeat center center fixed;
+    background-size: cover; */
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #000000 40%, #434343);
+}
+
+hr {
+    color: white;
+    box-shadow: 1px 1px 10px 1px #FFF;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Classes */
+
+
+.container {
+    text-align: center;
+}
+
+.container .name h1 {
+    margin-top: 10px;
+    font-size: 64px;
+    font-style: bold;
+    font-weight: 700;
+}
+
+.container .name h3 {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.container .name {
+    margin-bottom: 50px;
+}
+
+.form {
+    width: 40%;
+    margin: 0 auto;
+    /* border: thick double white;
+    box-shadow: 1px 1px 10px 1px #FFF; */
+    margin-top: 25px;
+    padding: 5px;
+}
+
+.form input {
+    font-weight:600;
+    color: black;
+    width: 65%;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px 0px 0px 5px;
+    margin-right: -6px;
+}
+
+.form button {
+    font-weight:600;
+    color: #000;
+    font-weight: 600;
+    background: linear-gradient(to right, white 50%, darkcyan 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    width: 15%;    
+    text-decoration: solid underline;
+    transition: all 200ms ease-out;
+    
+}
+
+.form button:hover {
+    background-position: left bottom;
+}
+
+.rotate {
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+.show_about {
+    display: block !important;
+}
+
+/* IDs */
+
+#click {
+    font-size: 15px;
+    font-weight: 200;
+    margin-bottom: 5px;
+}
+
+#arrow {
+    font-size: 30px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    /* animation: blink 1s steps(5, start) infinite; */
+}
+
+/* @keyframes blink {
+    to {
+        visibility: hidden;
+    }
+} */
+
+#animation {
+    transition: 300ms;
+}
+
+#about p {
+    text-align: justify;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 100;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Responsivity */
+
+@media only screen and (max-width: 810px) {
+    .form {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 412px) {
+    header {
+        display:flex;
+        justify-content:space-evenly;
+        align-items: center;
+        padding: 5px;
+        /* border-bottom: 2px solid white; */
+        box-shadow: 1px 1px 10px 1px #FFF;
+    }
+
+    header ul li {
+        font-size:x-small;
+        padding: 3px;
+    }
+
+    .container .name h1 {
+        font-size: 32px;
+        font-style: bold;
+        font-weight: 700;
+    }
+    
+    .container .name h3 {
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+    #about p {
+        text-align: justify;
+        font-size: 14px;
+        font-style: italic;
+        font-weight: 100;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}
